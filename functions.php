@@ -27,6 +27,8 @@
       }
 
     }
-  } else {
+  }
+  
+  if(class_exists('TemaHotel')) {
     $temaHotel = new TemaHotel();
   }

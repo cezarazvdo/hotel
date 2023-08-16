@@ -8,21 +8,16 @@ Author: Cezar;
 
 Author URI: https://www.endecode.com.br;
 
-Github Theme URI: ;
+Github Theme URI: https://github.com/cezarazvdo/hotel;
 
 Description: Site Modelo de Instituição, contém blog, categorias de assuntos, formulários e muito mais;
 
 Version: 1.0;
 */
-header {
 
-    background-color: black;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 35px;
-    width: 100%;
-
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Istok Web","Roboto", sans-serif;
+    font-size: 16px;
 }

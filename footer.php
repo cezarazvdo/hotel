@@ -1,1 +1,3 @@
-<div>teste footer</div>
+<footer>
+    
+</footer>

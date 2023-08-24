@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 165px;
+    background: linear-gradient(90deg, #180202 0%, #512424 100%);
+    padding: 6% 25%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.images, img {
+    width: 165px;
+    height: 110px;
+    transform: rotate(-7.5deg);
+    border-radius: 2px;
+    border-color: white;
+    border: inset;
+}
+
+.image2 {
+    transform: rotate(15deg);
+}

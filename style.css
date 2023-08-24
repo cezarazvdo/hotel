@@ -16,8 +16,22 @@ Version: 1.0;
 */
 
 body {
+    background-image: linear-gradient(90deg, #1B0707 0%, rgba(22, 6, 6, 0.67) 50%, rgba(10, 2, 2, 0.00) 100%), url('./assets/images/background_header.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
     padding: 0;
     margin: 0;
     font-family: "Istok Web","Roboto", sans-serif;
     font-size: 16px;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    height: 100%;
+    flex-flow: row-reverse;
+    color: white;
+    align-items: center;
 }

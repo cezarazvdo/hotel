@@ -4,20 +4,17 @@
     
 ?>
 
-<article class="container">
-    <div class="images">
-        <!-- TODO: verificar por que a primeira imagem parece 2 -->
+<div class="image-container">
     <figure>
-        <img src=<?php echo $example_image_1 ?> alt="Quarto de exemplo 1">
+        <img id="image1"src=<?php echo $example_image_1 ?> alt="Quarto de exemplo 1">
     </figure>        
     <figure>
-        <img class="image2" src=<?php echo $example_image_2 ?> alt="Quarto de exemplo 2">
+        <img id="image2" src=<?php echo $example_image_2 ?> alt="Quarto de exemplo 2">
     </figure>
-    </div>
-    <div>
-        <?php 
+</div>
+<div class="description-container">
+    <?php 
         $presentation_title = 'test';
         get_template_part('templates/content', 'presentation');
-        ?>
-    </div>
-</article>
+    ?>
+</div>

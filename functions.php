@@ -28,6 +28,7 @@
         wp_enqueue_style('footer_style', get_template_directory_uri().'/assets/css/footer.css');
         wp_enqueue_style('presentation_style', get_template_directory_uri().'/assets/css/presentation.css');
         wp_enqueue_style('highlights_style', get_template_directory_uri().'/assets/css/highlights.css');
+        wp_enqueue_style('room_types', get_template_directory_uri().'/assets/css/room_types.css');
       }
 
     }

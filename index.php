@@ -12,7 +12,12 @@
         <section class="presentation">
             <?php get_template_part('templates/content', 'presentation') ?>
         </section>
-        <?php get_template_part('templates/content', 'highlights') ?>
+        <section class="highlights">
+            <?php get_template_part('templates/content', 'highlights') ?>
+        </section>
+        <!-- <section class="room_types">
+            <?php get_template_part('templates/content', 'room_types') ?>
+        </section> -->
         <?php get_footer() ?>
     </body>
 </html>

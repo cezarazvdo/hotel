@@ -28,10 +28,31 @@ body {
 
 .presentation {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 50%;
     height: 100%;
-    flex-flow: row-reverse;
     color: white;
+    margin: 0 10%;
+}
+
+.highlights {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #180202 0%, #512424 100%);
+    justify-content: space-around;
     align-items: center;
+    padding: 5% 0;
+}
+
+.room_types {
+}
+
+@media only screen and (max-width: 500px) {
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -1,0 +1,11 @@
+{
+    "name": "cezar/hotel",
+    "description": "site generico para hotel",
+    "authors": [
+        {
+            "name": "cezarazvdo",
+            "email": "cezardiazevedo@gmail.com"
+        }
+    ],
+    "require": {}
+}

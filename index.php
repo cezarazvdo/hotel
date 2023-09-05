@@ -8,16 +8,19 @@
         <title>test</title>
     </head>
     <body class="body">
-        <?php get_header() ?>
+        <section>
+            <?php get_header() ?>
+            <?php get_template_part('templates/content', 'carrocel') ?>
+        </section>
         <section class="presentation">
             <?php get_template_part('templates/content', 'presentation') ?>
         </section>
         <section class="highlights">
             <?php get_template_part('templates/content', 'highlights') ?>
         </section>
-        <!-- <section class="room_types">
+        <section class="room_types">
             <?php get_template_part('templates/content', 'room_types') ?>
-        </section> -->
+        </section>
         <?php get_footer() ?>
     </body>
 </html>

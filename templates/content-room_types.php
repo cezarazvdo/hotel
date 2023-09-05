@@ -11,25 +11,30 @@
         }
     }
 
+    $lorem_description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, numquam qui nulla quos quidem excepturi nemo iste dignissimos fugiat optio quae! Aut dolore, esse distinctio sequi similique vero saepe facilis?";
 
-    $data_types = [new Data_type("teste", "teste", get_template_directory_uri().'/assets/images/room_example_1.png')];
+    $data_types = [ new Data_type("Teste1", $lorem_description, get_template_directory_uri().'/assets/images/room_example_1.png'),
+                    new Data_type("Teste2", $lorem_description, get_template_directory_uri().'/assets/images/room_example_1.png'),
+                    new Data_type("Teste3", $lorem_description, get_template_directory_uri().'/assets/images/room_example_1.png')];
     
     function create_type_list($data_types) {
         return  
-        "</li>
-            <article class='list_item'>
-                " . get_template_part('templates/content', 'presentation') . "
-                <figure>
-                    <img src='". $data_types->image . "' alt='ilustração'>
-                </figure>
+        "<li>
+            <article class='room-description'>
+                <h1>$data_types->title</h1>
+                <p>$data_types->description</p>
             </article>
-        <li>";
+            <figure>
+                <img src='$data_types->image' alt='ilustração'>
+            </figure>
+        </li>
+        <hr>";
     }
 ?>
 
-<ul>
+<ul class="room-list">
     <?php
         $list = array_map('create_type_list', $data_types);
-        //echo implode('', $list);
-    ?> 
+        echo implode('', $list);
+    ?>
 </ul>

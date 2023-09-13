@@ -1,2 +1,27 @@
-<?php
-// Silence is golden.
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <?php wp_head(); ?>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+        <title>test</title>
+    </head>
+    <body class="body">
+        <section>
+            <?php get_header() ?>
+            <?php get_template_part('templates/content', 'carrocel') ?>
+        </section>
+        <section class="presentation">
+            <?php get_template_part('templates/content', 'presentation') ?>
+        </section>
+        <section class="highlights">
+            <?php get_template_part('templates/content', 'highlights') ?>
+        </section>
+        <section class="room_types">
+            <?php get_template_part('templates/content', 'room_types') ?>
+        </section>
+        <?php get_footer() ?>
+    </body>
+</html>
+<?php wp_footer();

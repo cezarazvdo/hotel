@@ -1,0 +1,40 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 165px;
+    height: 110px;
+    border-radius: 2px;
+    border-color: white;
+    border: inset;
+}
+
+#image1 {
+    transform: rotate(-7.5deg);
+}
+
+#image2 {
+    transform: rotate(7.5deg);
+}
+
+.description-container {
+    width: 40%;
+}
+
+@media only screen and (max-width : 500px) {
+    .image-container {
+        flex-direction: row;
+    }
+    .image-container img {
+        width: 82px;
+        height: 55px;
+    }
+    .image-container {
+        gap: 10%;
+    }
+}
